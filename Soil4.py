@@ -89,7 +89,7 @@ with tabs[1]:
             st.error("Invalid image file. Please upload a valid image.")
         else:
             img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-            st.image(img_rgb, caption="Uploaded Soil Image", use_container_width=True)
+            st.image(img_rgb, caption="Uploaded Soil Image")
             
             soil_type, confidence, all_probs = predict_soil(img)
             
